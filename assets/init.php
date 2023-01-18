@@ -10,7 +10,12 @@
 // +------------------------------------------------------------------------+
 // | Atmos - Immersive Social Community Platform
 // | Copyright (©) 2021-23 Atmos | All rights reserved.
-// +------------------------------------------------------------------------+ -->
+// +------------------------------------------------------------------------+
+-->
 
-# Atmos App - Immersive Social Community Platform
- 
+<?php
+
+require_once("includes/header.php");
+require_once("includes/variables.php")
+
+?>
