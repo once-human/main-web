@@ -13,12 +13,24 @@
 // +------------------------------------------------------------------------+
 -->
 <?php
+<<<<<<< HEAD
 require_once("assets/init.php");
+=======
+session_start();
+if (!$_SESSION['logged_in']) {
+    header("Location:login.php"); 
+    exit();
+}
+
+require_once("assets/init.php");
+
+>>>>>>> f9004dbe7b71f18dfe1799e952b7a7e6432c4003
 ?>
 
 <!DOCTYPE html>
 
 <body>
+<<<<<<< HEAD
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -75,6 +87,11 @@ require_once("assets/init.php");
             }
         });
     </script>
+=======
+    <h1><?php echo $title; ?></h1>
+    <h1>Welcome <?php echo $_SESSION['username']; ?></h1>
+    <a href="/atmos/logout.php">Logout</a>
+>>>>>>> f9004dbe7b71f18dfe1799e952b7a7e6432c4003
 </body>
 
 </html>
